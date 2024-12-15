@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"slices"
 )
 
 func main() {
+
+	OseroCall()
 
 	//fmt.Println(strings.ToUpper(s[:1]) + s[1:])
 	//var s string = "aaaAAAaa"
@@ -86,14 +87,14 @@ func main() {
 	// }
 	//SnakeSpinOnTime2()
 
-	hs := []Test{
-		{1, 2},
-		{3, 4},
-	}
-	fmt.Println(hs)
+	// hs := []Test{
+	// 	{1, 2},
+	// 	{3, 4},
+	// }
+	// fmt.Println(hs)
 
-	fmt.Println(slices.Contains(hs, Test{1, 2}))
-	fmt.Println(slices.Contains(hs, Test{1, 3}))
+	// fmt.Println(slices.Contains(hs, Test{1, 2}))
+	// fmt.Println(slices.Contains(hs, Test{1, 3}))
 
 }
 
