@@ -6,11 +6,11 @@ import (
 	"strings"
 )
 
-func OseroCall() {
-	debugcall6()
+func Oserocall_osero() {
+	debugcall_osero6()
 }
 
-func debugCall2() {
+func debugcall_osero2() {
 	fmt.Println("debug start")
 	var H, W, Y, X int = 3, 3, 0, 0
 
@@ -27,7 +27,7 @@ func debugCall2() {
 }
 
 // 課題1
-func call1() {
+func call_osero1() {
 	var H, W, Y, X int
 	fmt.Scanf("%d %d %d %d", &H, &W, &Y, &X)
 
@@ -63,7 +63,7 @@ func getFieldLevel1(H, W, Y, X int) []string {
 }
 
 // 課題2
-func call2() {
+func call_osero2() {
 	var H, W, Y, X int
 	fmt.Scanf("%d %d %d %d", &H, &W, &Y, &X)
 
@@ -255,7 +255,7 @@ func GetNearestRightField(W, Y, X int, field []string) int {
 }
 
 // 課題3
-func call3() {
+func call_osero3() {
 	var H, W, Y, X int
 	fmt.Scanf("%d %d %d %d", &H, &W, &Y, &X)
 	// フィールド作成
@@ -395,7 +395,7 @@ func ReverseDiagonalLowerRightSquare(H, W, Y, X, stopY, stopX int, field []strin
 }
 
 // 課題4
-func call4() {
+func call_osero4() {
 	var H, W, Y, X int
 	fmt.Scanf("%d %d %d %d", &H, &W, &Y, &X)
 
@@ -542,7 +542,7 @@ func GetNearestDiagonalLowerRightField(H, W, Y, X int, field []string) (int, int
 }
 
 // 課題5
-func call5() {
+func call_osero5() {
 	var H, W, Y, X int
 	fmt.Scanf("%d %d %d %d", &H, &W, &Y, &X)
 
@@ -572,7 +572,7 @@ func ExecReversi(H, W, Y, X int, field []string) []string {
 }
 
 // 課題5
-func debugcall5() {
+func debugcall_osero5() {
 	var H, W, Y, X = 5, 5, 2, 2
 
 	var field []string = []string{
@@ -589,7 +589,7 @@ func debugcall5() {
 }
 
 // 課題6
-func call6() {
+func call_osero6() {
 	var H, W, Y, X int
 	fmt.Scanf("%d %d", &H, &W)
 
@@ -620,7 +620,7 @@ func call6() {
 	}
 }
 
-func debugcall6() {
+func debugcall_osero6() {
 	var H, W, Y, X = 5, 5, 2, 2
 
 	var field []string = []string{
@@ -898,7 +898,7 @@ func ExecReversiDiagonalWithWallBlock(H, W, Y, X int, field []string) []string {
 }
 
 // 課題7
-func call7() {
+func call_osero7() {
 	var H, W, N, Y, X int
 	fmt.Scanf("%d %d %d", &H, &W, &N)
 
@@ -920,7 +920,7 @@ func call7() {
 }
 
 // 課題8
-func call8() {
+func call_osero8() {
 	var H, W, N, Y, X int
 	fmt.Scanf("%d %d %d", &H, &W, &N)
 
@@ -948,7 +948,7 @@ func call8() {
 }
 
 // 課題9
-func call9() {
+func call_osero9() {
 	var H, W, N, n, Y, X int
 	fmt.Scanf("%d %d %d %d", &H, &W, &N, &n)
 

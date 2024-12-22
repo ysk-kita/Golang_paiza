@@ -31,3 +31,15 @@ func Fibonati(n int) int {
 
 	return aList[n-1]
 }
+
+func fibonati(n int) int {
+	fiboMemo := make([]int, n)
+	// n < 3は解が1
+	fiboMemo[0] = 1
+	fiboMemo[1] = 1
+	// nまでメモした値を再利用しながら計算する
+	for i := 2; i < n; i++ {
+		fiboMemo[i] = fiboMemo[i-1] + fiboMemo[i-2]
+	}
+	return fiboMemo[n-1]
+}
