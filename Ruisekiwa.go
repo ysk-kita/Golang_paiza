@@ -213,3 +213,32 @@ func SyakutoriMethodMinByByMultiple(list []int, checkVal int) int {
 	}
 	return ans
 }
+
+func call_ruisekiwa7() {
+	var n, k int
+	fmt.Scanf("%d %d", &n, &k)
+
+	// 累積和を求める
+	var ruisekiwa []int = make([]int, n+1)
+	for i := 1; i <= n; i++ {
+		var a int
+		fmt.Scan(&a)
+		ruisekiwa[i] = a + ruisekiwa[i-1]
+	}
+
+	// 最大の期間を求める
+	var maxCount, kouhoDay, kouhoSu = 0, 1, 0
+	for i := k; i <= n; i++ {
+		// i日目時点の累積和 - からk日分より過去の累積和を除外
+		ninzu := ruisekiwa[i] - ruisekiwa[i-k]
+		// 最大人数が多ければ最短候補日、候補数をリセットして更新
+		if maxCount < ninzu {
+			maxCount = ninzu
+			kouhoDay = i - k + 1
+			kouhoSu = 1
+		} else if maxCount == ninzu { // 最大人数が同じなら候補数を追加
+			kouhoSu++
+		}
+	}
+	fmt.Println(kouhoSu, kouhoDay)
+}
